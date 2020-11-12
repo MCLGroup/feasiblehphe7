@@ -1,0 +1,337 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Feasibility</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <h1 class= "mt-4 text-center">Studi Kelayakan</h1>
+
+    <br>
+    
+
+        <hr>
+        <div class="text-center">
+            <h3 class="text-center mt-3">Pilih Spesifikasi yang Digunakan</h3>
+                </div>
+
+        
+                <div class="container">
+      
+      
+                    <div class="row">
+                      <div class="col-12 col-lg-4">
+                        <div class="card w-90 text-center mb-4 mt-4">
+                          <div class="card-header mb-4">
+                            <h4>Fin</h4>
+                          </div>
+                          <div class="text-center">
+                          <img src="./images/finn.jpg" style="width: 80%;" class="card-img-top" alt="...">
+                        </div>
+                          <div class="card-body">
+                            
+                            
+                            <div class="text-center">
+                                <label>Material</label>
+                                &nbsp;&nbsp;&nbsp;
+                                <select>
+                                    <option>Aluminium</option>
+
+
+                                </select>
+                                
+                                <br>
+                                <label>Tebal</label>
+                                &nbsp;&nbsp;&nbsp;
+                                <select>
+                                    <option>0.105 mm</option>
+
+
+                                </select>
+                                <br>
+                                <label>Jarak Antar Fin</label>
+                                &nbsp;&nbsp;&nbsp;
+                                <select id="jarakfin">
+                                    <option id="1mm">1</option>
+                                    <option id="2mm">2</option>
+                                    <option id="3mm">3</option>
+                                    <option id="4mm">4</option>
+
+
+                                </select> mm
+                          </div>
+
+                          </div>
+                        </div>
+              
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="card text-center mb-4 mt-4">
+                          <div class="card-header mb-4">
+                            <h4>Heat Pipe</h4>
+                          </div>
+                          <div class="text-center">
+                          <img src="./images/pipe.jpg" style="width: 80%;" class="card-img-top" alt="...">
+                        </div>
+                          <div class="card-body">
+                            <div class="text-center">
+                                <label>Material</label>
+                                &nbsp;&nbsp;&nbsp;
+                                <select>
+                                    <option>Tembaga</option>
+                                </select>
+                                <br>
+                                
+                                <label>Diameter</label>
+                                &nbsp;&nbsp;&nbsp;
+                                <select>
+                                    <option>10 mm</option>
+
+
+                                </select>
+                          </div>
+                          </div>
+                        </div>
+              
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="card text-center mb-4 mt-4">
+                          <div class="card-header mb-4">
+                            <h4>Rangka dan Jumlah Modul</h4>
+                            
+                          </div>
+                          <div class="text-center">
+                          <img src="./images/Rangka.jpg" style="width: 80%;" class="card-img-top" alt="...">
+                        </div>
+                          <div class="card-body">
+                            
+                            <div class="text-center">
+                                <label>Material</label>
+                                &nbsp;&nbsp;&nbsp;
+                                <select>
+                                    <option>Galvanum</option>
+                                
+                                
+
+
+                                </select>
+                                <br>
+                                <label>Jumlah Modul</label>
+                                &nbsp;&nbsp;&nbsp;
+                                <select id="jumlahmodul">
+                                    <option id="1buah">1</option>
+                                    <option id="2buah">2</option>
+                                    <option id="3buah">3</option>
+                                
+                                
+
+
+                                </select>
+                          </div>
+                            
+                            
+                          </div>
+                        </div>
+              
+                      </div>
+              
+              
+                    </div>
+              
+              
+              
+                  </div>
+                  <div class="text-center">
+                    <h3 class="text-center mt-3 mb-5">Masukkan Dimensi Heat Pipe Heat Exchanger untuk Mengetahui Biaya</h3>
+                        </div>
+              
+        
+        <div class="container">
+      
+      
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                  
+                <div class="card mb-4 mt-4" style="width: 30rem;">
+                    <div class="card-header mb-4 text-center">
+                        <h4>Panjang dan Lebar HPHE untuk Setiap (Satu) Modul</h4>
+                        
+                      </div>
+                  <div class="text-center">
+                    <img src="./images/Jadiifix(1).jpg" width="80%">
+    
+                  </div>
+              
+             
+             <br>
+             
+                <div class="card-body">
+             <div class="text-center">
+             <p>
+                <label>Xt</label>  &nbsp; 
+                
+
+
+                
+               &nbsp; 	&nbsp;	&nbsp; 	
+                <input id="xt" type="number">  mm
+            </p>
+            <p>
+                <label>Xl </label> &nbsp; 	&nbsp; 	&nbsp; 	&nbsp;	&nbsp; 
+                <input id="xl" type="number">  mm
+            </p>
+            <p>
+                <label>Jumlah Baris</label>
+                <input id="baris" type="number">
+            </p>
+            <p>
+                <label>Jumlah Heat Pipe Per Baris</label>
+                <input id="kolom" type="number">
+            </p>
+            </div>
+                </div>
+                </div>
+        </div>
+            
+        <div class="col-12 col-lg-6">
+            <div class="card mb-4 mt-4" style="width: 30rem;">
+                <div class="card-header mb-4 text-center">
+                    <h4>Kedalaman HPHE untuk Setiap (Satu) Modul</h4>
+                    
+                  </div>
+            
+            <div class="text-center">
+            <img src="./images/jadi2222.jpg" width="80%">
+            </div>
+            <div class="text-center">
+                <br>
+                <div class="card-body">
+            <p>
+                <label>Panjang Evaporator</label>
+                <input id="evap" type="number">  mm
+            </p>
+            <p>
+                <label>Panjang Adiabatik</label>
+                <input id="adiab" type="number">  mm
+            </p>
+            <p>
+                <label>Panjang Kondenser</label>
+                <input id="kond" type="number">  mm
+            </p>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <td><input type="button" value="Hitung Biaya" onclick="calculate2();"/> </td>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card-header text-center">
+                    <h3>Hasil Perhitungan Biaya</h3>
+                </div>
+                <div class="card w-90 text-center mb-4">
+                <div class="card-body">
+                <div class="text-center">
+                    <p>
+                        <label>Biaya Material Fin</label>
+                        &nbsp;&nbsp;&nbsp; &nbsp; <span id="tesst2"></span>
+                    </p>
+                    <p>
+                        <label>Biaya Material Rangka</label>
+                        &nbsp;&nbsp;&nbsp; &nbsp; <span id="tesst3"></span>
+                       
+                    </p>
+                    
+                    <p>
+                        <label>Biaya Produksi</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="tesst5"></span> 
+                    </p>
+                    <p>
+                        <label>Biaya Heat Pipe</label>
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span id="tesst4"></span>  
+                    </p>
+                   
+                    
+                    <p>
+                        <label>Biaya Instalasi</label>
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span id="tesst7"></span>  
+                    </p>
+                   
+                    <p>
+                        <label><i>Benefit Margin(20%)</i></label>
+                        &nbsp; &nbsp;&nbsp;<span id="tesst8"></span>
+                    </p>
+                    <hr>
+                    
+                    <p>
+                        <label>Biaya Total</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="tesst9"></span>
+                    </p>
+               
+
+                </div>
+            </div>
+        </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+             
+
+             
+        </div>
+        <br>
+        <br>
+     <div class ="hidehide">  
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                        <h3>Biaya Listrik yang di Hemat Per Tahun</h3>
+                        <br>
+                        <br>
+                        <p>
+                            <label>Heat Recovery</label>
+                            <input id="teo" type="number">
+                        </p>
+                        <p>
+                            <label>COP</label>
+                            <input id="teo" type="number">
+                        </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    </div>
+
+</body>
+</html>
