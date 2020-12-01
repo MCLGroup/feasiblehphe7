@@ -60,7 +60,7 @@ function calculate2()
 
     let benefitmargin = new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR" }).format((+benefitmargin1 + +benefitmargin2 + +benefitmargin3)/5)
     
-    let biayatotal = new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR" }).format((+benefitmargin1 + +benefitmargin2 + +benefitmargin3)*6/5)
+    const biayatotal = new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR" }).format((+benefitmargin1 + +benefitmargin2 + +benefitmargin3)*6/5)
     
     
     
@@ -78,9 +78,132 @@ function calculate2()
 
     document.getElementById('tesst9').innerHTML = biayatotal
 
+    document.getElementById('tesst10').innerHTML = biayatotal
+
+
     
 
     document.getElementById('tesst6').innerHTML = new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR" }).format(Math.floor(3*(+evap + +kond) *lebar *kedalaman*843/100000 + (+rangka + +dudukan) + 8500))
 	
+
+}
+
+function calculate4(){
+let seleect1 = document.getElementById('jumlahmodul2');
+let seleect2 = document.getElementById('tei');
+let seleect3 = document.getElementById('vei');
+
+const chooice1  = seleect1.value
+const chooice2 = seleect2.value;
+const chooice3 = seleect3.value;
+
+
+  if (chooice1 === '11' && chooice2 === '30' && chooice3 === '15') {
+     tes10 = 87.1 
+    } else if (chooice1 === '11' && chooice2 === '30' && chooice3 === '20') {
+      tes10 = 122
+    } else if (chooice1 === '11' && chooice2 === '30' && chooice3 === '25') {
+        tes10 = 103.5
+    } else if (chooice1 === '22' && chooice2 === '30' && chooice3 === '15') {
+        tes10 = 96.6
+    } else if (chooice1 === '22' && chooice2 === '30' && chooice3 === '20') {
+        tes10 = 146.8
+    } else if (chooice1 === '22' && chooice2 === '30' && chooice3 === '25') {
+        tes10 = 190.1
+    } else if (chooice1 === '33' && chooice2 === '30' && chooice3 === '15') {
+        tes10 = 134.0
+    } else if (chooice1 === '33' && chooice2 === '30' && chooice3 === '20') {
+        tes10 = 186.8
+    } else if (chooice1 === '33' && chooice2 === '30' && chooice3 === '25') {
+        tes10 = 229.8
+    } else if (chooice1 === '11' && chooice2 === '35' && chooice3 === '15') {
+        tes10 = 152.6
+    } else if (chooice1 === '11' && chooice2 === '35' && chooice3 === '20') {
+        tes10 = 203.1
+      } else if (chooice1 === '11' && chooice2 === '35' && chooice3 === '25') {
+          tes10 = 249.6
+      } else if (chooice1 === '22' && chooice2 === '35' && chooice3 === '15') {
+          tes10 = 226.1
+      } else if (chooice1 === '22' && chooice2 === '35' && chooice3 === '20') {
+          tes10 = 315.7
+      } else if (chooice1 === '22' && chooice2 === '35' && chooice3 === '25') {
+          tes10 = 385.3
+      } else if (chooice1 === '33' && chooice2 === '35' && chooice3 === '15') {
+          tes10 = 260.1
+      } else if (chooice1 === '33' && chooice2 === '35' && chooice3 === '20') {
+          tes10 = 325.5
+      } else if (chooice1 === '33' && chooice2 === '35' && chooice3 === '25') {
+          tes10 = 375.2
+      } else if (chooice1 === '11' && chooice2 === '40' && chooice3 === '15') {
+          tes10 = 270.2 
+       } else if (chooice1 === '11' && chooice2 === '40' && chooice3 === '20') {
+          tes10 = 342.6
+       } else if (chooice1 === '11' && chooice2 === '40' && chooice3 === '25') {
+           tes10 = 409.3
+       } else if (chooice1 === '22' && chooice2 === '40' && chooice3 === '15') {
+           tes10 = 313
+       } else if (chooice1 === '22' && chooice2 === '40' && chooice3 === '20') {
+           tes10 = 387.6
+       } else if (chooice1 === '22' && chooice2 === '40' && chooice3 === '25') {
+           tes10 = 467.8
+       } else if (chooice1 === '33' && chooice2 === '40' && chooice3 === '15') {
+           tes10 = 364.8
+       } else if (chooice1 === '33' && chooice2 === '40' && chooice3 === '20') {
+           tes10 = 509.6
+       } else if (chooice1 === '33' && chooice2 === '40' && chooice3 === '25') {
+           tes10 = 629.6
+       }else if (chooice1 === '11' && chooice2 === '45' && chooice3 === '15') {
+           tes10 = 369.3 
+       } else if (chooice1 === '11' && chooice2 === '45' && chooice3 === '20') {
+           tes10 = 458.5
+       } else if (chooice1 === '11' && chooice2 === '45' && chooice3 === '25') {
+           tes10 = 545.8
+       } else if (chooice1 === '22' && chooice2 === '45' && chooice3 === '15') {
+           tes10 = 428.3
+       } else if (chooice1 === '22' && chooice2 === '45' && chooice3 === '20') {
+           tes10 = 546.4
+       } else if (chooice1 === '22' && chooice2 === '45' && chooice3 === '25') {
+           tes10 = 660
+       } else if (chooice1 === '33' && chooice2 === '45' && chooice3 === '15') {
+           tes10 = 504.7
+       } else if (chooice1 === '33' && chooice2 === '45' && chooice3 === '20') {
+           tes10 = 680.9
+       } else if (chooice1 === '33' && chooice2 === '45' && chooice3 === '25') {
+           tes10 = 834.6
+       }
+
+let dailyuse2 = document.getElementById("dailyuse").value;
+let monthlyuse2 = document.getElementById("monthlyuse").value;
+const pengembalian = new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR" }).format(tes10*dailyuse2*monthlyuse2*4*1344/1000)
+
+        
+
+    
+
+  
+  
+
+
+
+document.getElementById('testes10').innerHTML = tes10
+    
+document.getElementById('testes13').innerHTML = pengembalian
+document.getElementById('testes14').innerHTML = pengembalian
+
+
+  }
+
+
+
+function calculate5(){
+
+const binvest = document.getElementById('binvest').value
+const bpengembalian = document.getElementById('bpengembalian').value
+const periodep =  Math.trunc(binvest/bpengembalian)
+const sisaperiode = binvest%bpengembalian
+const sisaperiode2 = Math.trunc(sisaperiode/bpengembalian * 12)
+document.getElementById('periodep').innerHTML = periodep
+document.getElementById('sisaperiode2').innerHTML = sisaperiode2
+
 
 }
