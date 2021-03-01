@@ -41,7 +41,7 @@ function calculate2()
 
     let galvalum =new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR" }).format( Math.round(+rangka + +dudukan))
    
-    let heatpipe =new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR" }).format(Math.floor(newnewbaris*kolom*150000))
+    let heatpipe =new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR" }).format(Math.floor(newnewbaris*kolom*100000))
 
     let heatpipe2 = new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR" }).format(Math.floor(3.14*100*(+evap + +adiab + +kond)*newnewbaris*kolom*1300798421/4000000000))
     
@@ -54,7 +54,7 @@ function calculate2()
 
     let benefitmargin1= 3*(+rawgalvalum + +rawvfin)
 
-    let benefitmargin2 = newnewbaris*kolom*150000
+    let benefitmargin2 = newnewbaris*kolom*100000
 
     let benefitmargin3= 250000
 
